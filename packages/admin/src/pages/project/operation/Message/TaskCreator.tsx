@@ -290,8 +290,8 @@ const MessageTask: React.FC = () => {
                             }
                           }
 
-                          if (template.length + (value?.length || 0) > 70) {
-                            return Promise.reject('短信超出 70 个字符，无法发送，请精简短信内容')
+                          if (template.length + (value?.length || 0) > 140) {
+                            return Promise.reject('短信超出 140 个字符，无法发送，请精简短信内容')
                           }
 
                           return Promise.resolve()
